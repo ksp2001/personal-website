@@ -1,0 +1,281 @@
+body {
+	width:100%;
+	height:100%;
+	margin:0;
+}
+/* this is the css for the first page, ie the home page */
+.pageone {
+	background: #fff;
+	background: url("https://i.imgur.com/R9hzuLw.png");
+	font-family: century gothic;
+	background-repeat: no-repeat;
+	margin:0 0;
+	height:100vh;
+}
+
+/* dealing with the navigation bar :: making its position fixed using the navbar class that is applied to the div
+that surrounds the whole navbar; using the navigation class to create a grid divided into two equal parts, one for logo
+other for the menu of nav icons. */
+nav {
+	margin-top:-1rem;
+	padding-top:2rem;
+}
+.navbar {
+	position:fixed;
+	margin-top:0;
+	width:100%;
+}
+
+.navigation {
+	margin:1rem 3rem 0 3rem;
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	height:3rem;
+	padding:0.3rem;
+}
+
+.logo {
+	font-size:2.7rem;
+	color:#fff;
+	letter-spacing:-0.09rem;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.logo:hover {
+	font-size:2.8rem;
+	transition: 0.1s;
+}
+
+.menu {
+	padding-top: 0.7rem;
+	word-spacing:1.5rem;
+	text-align: right;
+}
+.nav-icon {
+	font-size:1.6rem;
+	color:#fff;
+	text-decoration: none;
+}
+
+.nav-icon:hover {
+	color:#ceadc7;
+}
+
+/* according to javascript, the class scroll gets added to nav. according to scroll, this is what happens. */
+.scroll {
+	background-color: rgba(92,80,111, 0.7);
+	padding-top:0;
+	transition: 0.5s;
+}
+
+/*nav bar ended*/
+
+
+/* changing the scrollbar to make the design neater*/
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background :#0c152f;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ceadc7;
+}
+
+/* scrollbar end*/
+
+/* main content of the home page */
+.main {
+	padding-top:16rem;
+	font-size:7.9rem;
+	color:#fff;
+	text-align: center;
+	letter-spacing:-0.09rem;
+}
+
+
+.subheading-text {
+	margin-top:-1rem;
+	font-size:1.75rem;
+	letter-spacing:0.06rem;
+	color:#fff;
+	text-decoration: none;
+}
+
+a.subheading-text:hover {
+	color:#ceadc7;
+}
+
+.findmore {
+	padding-top:7rem;
+}
+
+/* main content home page end */
+
+/* page one end */
+
+/* page two, ie, about page begins */
+
+.pagetwo {
+	background: #fff;
+	font-family: century gothic;
+	margin:0 0;
+	height:100vh;
+	width:100%;
+}
+
+.grid-two {
+	padding-top:4rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	height:100vh;
+}
+
+.macbook-mockup {
+	padding-top:13rem;
+	width:36rem;
+}
+
+.about-me {
+	padding: 11.7rem 8rem 0 3rem;
+	font-size:3rem;
+	color:#161516;
+}
+
+.about-me-text {
+	font-family:georgia;
+	padding-top:0.8rem;
+	font-size:1.3rem;
+	line-height:1.6rem;
+	text-align: justify;
+	text-decoration: none;
+	letter-spacing: -0.01rem;
+	opacity: 0.9;
+}
+
+.designs-link:hover {
+	color:#161516;
+}
+
+.skillset-link {
+	padding-top:1rem;
+}
+
+.skillset-checkout {
+	font-size:1.8rem;
+	text-decoration: none;
+	color:#161516;
+}
+
+.skillset-checkout:hover {
+	color:#ceadc7;
+}
+
+/* page two over */
+
+/* page three */
+
+.pagethree {
+	width:100%;
+	height:100vh;
+	background:#fff;
+	background-image:url('https://i.imgur.com/l5lCIgb.png');
+}
+
+.container-page3 {
+	padding:16rem 7rem 0 12rem;
+}
+
+.skills-title {
+	font-family: century gothic;
+	font-size:3rem;
+	color: #cd87bf;
+}
+
+.skills-grid {
+	font-family:century gothic;
+	font-size:3.75rem;
+	padding:1rem 17rem 0 0;
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	color:#151615;
+}
+
+.skill-title-text {
+	font-size:1.5rem;
+}
+
+.twopointfivesize {
+	font-size:2.9rem;
+}
+
+.sizeonetext {
+	font-family: calibri;
+	font-size: 1rem;
+	line-height:1.1rem;
+}
+
+.grid-column {
+	padding:1rem;
+}
+
+.top-margin-design {
+	padding-top:3rem;
+}
+
+.top-margin-text {
+	padding-top:0.7rem;
+}
+
+/* page three end */
+
+/* page four includes both examples and contact */
+
+.pagefour {
+	height:100vh;
+	width:100%;
+	background:#fff;
+}
+
+.e-c-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	height:100%;
+}
+
+.examples {
+	padding-top:3.7rem;
+	font-family: century gothic;
+}
+
+.contact {
+	padding-top:3.7rem;
+	background:#151615;
+}
+
+/* these are used throughout the website */
+.bold-text {
+	font-weight:bold;
+}
+
+.center-align {
+	text-align: center;
+}
+
+.pink-text {
+	color:#ceadc7;
+}
+
+.right-align {
+	text-align: right;
+}
+
+.justify-align {
+	text-align: justify;
+}
