@@ -186,6 +186,7 @@ a.subheading-text:hover {
 	height:100vh;
 	background:#fff;
 	background-image:url('https://i.imgur.com/l5lCIgb.png');
+	background-repeat: no-repeat;
 }
 
 .container-page3 {
@@ -285,7 +286,9 @@ a.subheading-text:hover {
 .contact {
 	width:100%;
 	height:50vh;
+	background:#e6e6e6;
 	background-image:url("https://i.imgur.com/1E8j0mm.png");
+	background-repeat: no-repeat;
 }
 
 .contact-div {
@@ -369,4 +372,127 @@ label textarea {
 
 .justify-align {
 	text-align: justify;
+}
+
+/* MAKING THE SITE RESPONSIVE :: MEDIA QUERIES; */
+/* starting with different resolutions for laptops, because my website was coded for 1366x768 (the most common resolution)
+however, I want to render it for other common resolutions as well*/
+@media (min-width: 1390px) {
+
+	/*page one*/
+	.navigation {
+		height:3.7rem;
+	}
+	.logo {
+		font-size:3.2rem;
+	}
+	.nav-icon {
+		font-size:2.1rem;
+	}
+	.pageone {
+		background: url("https://i.imgur.com/EOImN0X.png");
+	}
+	.main {
+		font-size:10rem;
+		padding-top: 24rem;
+	}
+	.subheading-text {
+		font-size:2.25rem;
+	}
+
+	/*page two*/
+	.macbook-mockup {
+		width:44rem;
+		padding-top: 16rem;
+	}
+
+	.about-me {
+		padding: 16rem 12rem 0 3rem;
+	}
+
+	.about-me-text {
+		font-size: 1.9rem;
+		line-height: 2.2rem;
+		font-family: times new roman;
+	}
+	.skillset-checkout {
+	font-size:2.1rem; }
+
+	.skills-title {
+		font-size:3.9rem;
+	}
+
+	/* page three */
+	.pagethree {
+		background: url("https://i.imgur.com/FCpcjsv.png");
+	}
+	.container-page3 {
+		padding:24rem 18rem 0 18rem;
+	}
+	.sizeonetext {
+	font-family: calibri;
+	font-size: 1.4rem;
+	line-height:1.5rem;
+	}
+	.skill-title-text {
+	font-size:1.9rem;
+	}
+
+	/* page four */
+	.examples-grid {
+		padding:9rem 14rem 0 14rem;
+		font-size: 1.4rem;
+	}
+	.exgridbox {
+		padding:1.4rem;
+	}
+
+	.grid-title {
+		font-size: 1.7rem;
+		font-family:calibri;
+	}
+
+	.exlink {
+		font-size:1.6rem;
+	}
+
+	/* page five */
+	.contact {
+		background: url("https://i.imgur.com/DGTzrDj.png");
+	}
+	.contact-div {
+		padding:6rem 16rem 0 44rem;
+	}
+
+	form {
+		font-size:1.3rem;
+	}
+
+	textarea {
+		height:3rem;
+		width:100%;
+	}
+
+	input {
+		width:100%;
+		height:1.8rem;
+	}
+
+	.buttoned {
+		padding:1rem;
+		width:11rem;
+		border-radius: 1.9rem;
+		font-size:1.4rem;
+	}
+
+	.buttoned:hover {
+		background: #cd87bf;
+	}
+	label textarea {
+		vertical-align: top;
+	}
+	.footer {
+		font-size: 1.3rem;
+	}
+
 }
