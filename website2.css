@@ -2,6 +2,7 @@ body {
 	width:100%;
 	height:100%;
 	margin:0;
+	background:#fff;
 }
 /* this is the css for the first page, ie the home page */
 .pageone {
@@ -9,7 +10,7 @@ body {
 	background: url("https://i.imgur.com/R9hzuLw.png");
 	font-family: century gothic;
 	background-repeat: no-repeat;
-	margin:0 0;
+	margin:0;
 	height:100vh;
 }
 
@@ -62,6 +63,21 @@ nav {
 	color:#ceadc7;
 }
 
+#toggle {
+	display:none;
+}
+
+label {
+	display:none;
+	float:right;
+	margin:1.3rem 2rem 0 0;
+	font-size: 1.4rem;
+	color:#fff;
+}
+label:hover {
+	color:#ceadc7;
+	cursor: pointer;
+}
 /* according to javascript, the class scroll gets added to nav. according to scroll, this is what happens. */
 .scroll {
 	background-color: rgba(92,80,111, 0.7);
@@ -134,7 +150,6 @@ a.subheading-text:hover {
 	padding-top:2.7rem;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	height:100vh;
 }
 
 .macbook-mockup {
@@ -249,7 +264,7 @@ a.subheading-text:hover {
 	padding:0.5rem;
 }
 .examples-grid {
-	padding:6rem 8rem 0 8rem;
+	padding:4rem 8rem 0 8rem;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	height:45%;
@@ -327,8 +342,14 @@ input {
 .buttoned:hover {
 	background: #cd87bf;
 }
-label textarea {
+textarea {
 	vertical-align: top;
+}
+
+.alt-contact {
+	display:none;
+	font-family: century gothic;
+	font-size:80%;
 }
 
 /* footer */
@@ -488,7 +509,7 @@ however, I want to render it for other common resolutions as well*/
 	.buttoned:hover {
 		background: #cd87bf;
 	}
-	label textarea {
+	textarea {
 		vertical-align: top;
 	}
 	.footer {
@@ -496,3 +517,160 @@ however, I want to render it for other common resolutions as well*/
 	}
 
 }
+
+@media (max-width:902px) {
+ .about-me {
+	padding: 11.7rem 0 0 3rem;
+	}
+
+label {
+	display: block;
+}
+.navigation {
+	display:block;
+	margin: 1rem 0 0 3rem;
+}
+.menu {
+	display:none;
+	background:rgba(206, 173, 199, 0.6);
+	width:7rem;
+	float:right;
+	padding:0.5rem;
+	text-align:right;
+	margin: -1rem 3rem 0 0;
+}
+.menu a {
+	display:block;
+	font-size:1.4rem;
+	font-family:century gothic;
+}
+.menu a:hover {
+	color:#ceadc7;
+}
+.main {
+	font-size:7rem;
+	line-height:6rem;
+}
+.subheading-text {
+	font-size: 1.05rem;
+	line-height:1.7rem;
+}
+.pagetwo {
+	height:100%;
+	width:100%;
+}
+.grid-two {
+	margin:1rem 0;
+	grid-template-columns: 1fr;
+	padding:0 2rem 0 2rem;
+}
+.macbook-mockup {
+	padding-top:6rem;
+}
+
+.about-me {
+	padding: 4rem 3rem 0 3rem;
+	font-size:3rem;
+	color:#161516;
+}
+
+.pagethree {
+	height:100%;
+	}
+.container-page3 {
+	padding: 10rem 0rem 0 0;
+	text-align: center;
+	}
+.skills-grid {
+	grid-template-columns: 1fr;
+	padding:0;
+	}
+.sizeonetext {
+	display:none;
+}
+.skill-title-text {
+	display:none;
+}
+.examples-grid {
+	grid-template-columns: 1fr;
+	padding:4rem 8rem 4rem 8rem;
+	}
+.side-border {
+	border:none;
+}
+.examples {
+	height:100%;
+	margin:0;
+}
+.contact {
+	padding:0;
+	height:100%;
+	background:#f6f6f6;
+}
+.contact-div {
+	padding:1rem;
+	text-align:center;
+}
+
+form {
+	display:none;
+}
+.alt-contact {
+	display:block;
+}
+
+}
+
+@media (max-width:610px) {
+ .about-me {
+	padding: 5rem 0 0 0;
+	}
+.macbook-mockup {
+	width:16rem;
+	}
+
+.skills-title {
+	font-size:2rem;
+}
+.examples-grid {
+	padding:2rem;
+	}
+.logo {
+	font-size:2.3rem;
+}
+.subheading-text {
+	padding-top: 1rem;
+	font-size:15%;
+	line-height:1rem;
+}
+.main {
+	font-size:5rem;
+	line-height:4rem;
+}
+.link-more {
+	line-height:4rem;
+	font-size:0.7rem;
+}
+.about-me-text {
+	font-family:cambria;
+	font-size:0.9rem;
+	line-height:0.9rem;
+	}
+.pagethree {
+	background:#f6f6f6;
+		}
+.container-page3 {
+	padding: 4rem 0rem 0 0; 
+ }
+ .footer {
+ 	font-size:80%;
+ }
+ .footer-text {
+ 	font-size:80%;
+ }
+}
+
+
+/* after 540, remove subheading-text
+after 1060 remove check out my skillsets link
+after 610 remove paddings in page 2
